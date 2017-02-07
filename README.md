@@ -1,3 +1,1 @@
-### SAUSy-Lab.github.io
-
-https://sausy-lab.github.io/
+#### the GitHub homepage of http://sausy.ca
