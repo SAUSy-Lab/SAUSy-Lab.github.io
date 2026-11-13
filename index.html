@@ -1,7 +1,145 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="refresh" content="0; URL='http://sausy.ca'" />
-</head>
-</html>
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAUSy Lab</title>
+    <meta
+      name="description"
+      content="Spatial Analysis of Urban Systems at the University of Toronto"
+    />
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"
+      defer
+    ></script>
+    <script src="assets/js/hero-map.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site">
+      <header class="site-header">
+        <a class="brand" href="./">
+          <img src="assets/img/logo.svg" alt="" width="44" height="44" />
+          <span>
+            <span class="brand-name">SAUSy Lab</span>
+            <span class="brand-tagline"
+              >Spatial Analysis of Urban Systems at the University of
+              Toronto</span
+            >
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Main">
+          <ul>
+            <li><a href="./" aria-current="page">Home</a></li>
+            <li><a href="members/">Members</a></li>
+            <li><a href="recent-pubs/">Publications</a></li>
+            <li><a href="../posts/">Posts</a></li>
+            <li><a href="mcrs/">MCRS</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <main id="main">
+        <p class="dept">
+          Department of Geography &amp; Planning, University of Toronto
+        </p>
+        <h1>The SAUSy Story</h1>
+        <p class="lede">
+          The SAUSy Lab (<strong>S</strong>patial <strong>A</strong>nalysis of
+          <strong>U</strong>rban <strong>Sy</strong>stems <strong>Lab</strong>)
+          is a collaborative research lab that uses advanced spatial analysis to
+          understand how cities affect society in the 21st century.
+        </p>
+
+        <figure class="hero" data-hero-map data-src="assets/data/hero/">
+          <div class="hero-stage">
+            <canvas
+              role="img"
+              aria-label="Animated map of Toronto, turned 17 degrees to align with the street grid: TTC routes with scheduled subway, LRT and streetcar trips, then vegetation and afternoon surface temperature along the walking and cycling network."
+            ></canvas>
+            <div class="hero-tip" hidden></div>
+            <div class="hero-loading">Loading map…</div>
+          </div>
+        </figure>
+
+        <div class="words">
+          <p>
+            Led by Professors Michael Widener and Steven Farber, current
+            research projects are focused on issues of accessibility,
+            transportation, urban health, social interaction, and food
+            environments. Currently, funding is provided by a variety of SSHRC,
+            CIHR, and Connaught Fund research grants.
+          </p>
+          <p>
+            If you are interested in pursuing a graduate degree (MA, PhD),
+            completing your postdoc, or joining us temporarily as a visiting
+            scholar in the lab, please contact Widener or Farber directly.
+            Please note, admission is competitive and we will only be able to
+            accommodate those who have projects closely related to on-going
+            work.
+          </p>
+        </div>
+
+        <div class="words premises" id="the-lab">
+          <p>
+            The SAUSy Lab is located on the ground/basement floor of
+            <a href="http://www.openstreetmap.org/way/7948423#"
+              >Sidney Smith Hall</a
+            >
+            at the
+            <a href="http://www.openstreetmap.org/way/10905424"
+              >University of Toronto</a
+            >, <strong>room 608</strong>. &nbsp;There’s usually someone around
+            during normal work hours, so feel free to drop by for a chat.
+          </p>
+          <p>
+            <a href="assets/img/lab.svg"
+              ><img
+                src="assets/img/lab.svg"
+                alt="Desks and chairs in the SAUSy Lab workspace."
+                width="864"
+                height="648"
+                loading="lazy"
+            /></a>
+          </p>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <a class="footer-uoft" href="https://www.utoronto.ca"
+          ><img
+            src="assets/img/uoft-grey.png"
+            alt="University of Toronto"
+            width="98"
+            height="36"
+        /></a>
+        <address class="footer-address">
+          Sidney Smith Hall, 100 St. George Street, Toronto
+        </address>
+        <span class="footer-credit"
+          >© SAUSy Lab, <i>Sic semper indicio aperto!</i></span
+        >
+        <a class="footer-github" href="https://github.com/SAUSy-Lab">
+          <svg
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="assets/img/profile-links.svg#github"></use>
+          </svg>
+          GitHub
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
