@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.f{fill:#1e3765}.s{fill:none;stroke:#1e3765}@media (prefers-color-scheme:dark){.f{fill:#f0eee6}.s{stroke:#f0eee6}}</style>
+<rect class="s" x="3.4" y="3.4" width="57.2" height="57.2" stroke-width="3.2"/>
+<path class="s" d="M22 4v56M43 4v56M4 24h56M4 45h56M31 4l29 26" stroke-width="2"/>
+<path class="f" d="M9 9h8v4H9zM9 15h4.5v5H9zM15 15h3.5v5H15zM27 8h3.5v4H27zM48 8.5h7v4h-7zM8.5 29h5v11h-5zM15.5 29h3v5h-3zM27 29h4v4h-4zM33 29h6v4h-6zM47.5 34h8v3h-8zM47.5 39h5v2.5h-5zM8.5 49.5h9v3.5h-9zM8.5 55h5v2h-5zM27 49.5h3.5v7H27zM33 49.5h6v3h-6zM47.5 49.5h4v7h-4zM53.5 49.5h3v7h-3z"/>
+<path class="s" d="M8 52L21 42.5 35.5 37.5 54 20.5" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle class="f" cx="8" cy="52" r="5"/>
+<circle class="f" cx="21" cy="42.5" r="3.8"/>
+<circle class="f" cx="35.5" cy="37.5" r="3.8"/>
+<circle class="f" cx="54" cy="20.5" r="5"/>
+</svg>

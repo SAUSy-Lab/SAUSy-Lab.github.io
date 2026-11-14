@@ -1,0 +1,285 @@
+/* SAUSy Lab site styles. */
+
+:root {
+  --bg: #fbfbf9;
+  --ink: #111820;
+  --text: #3b414a;
+  --muted: #747b85;
+  --rule: #e1e4e8;
+  --accent: #1e3765; /* U of T blue */
+  --accent-tint: #e9edf4;
+  --f-display: "Roboto Slab", Georgia, serif;
+  --f-body: Verdana, "DejaVu Sans", Geneva, sans-serif;
+  --f-dept: Georgia, "Times New Roman", serif;
+  --page: 1040px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  color: var(--text);
+  font: 15px/1.75 var(--f-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The street map from the original site. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url("../img/background.jpg") left top / 1500px auto repeat;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+a:hover {
+  color: var(--accent);
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3 {
+  color: var(--ink);
+  font-family: var(--f-display);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+p {
+  margin: 0 0 1em;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  z-index: 50;
+  background: var(--ink);
+  color: #fff;
+  padding: 8px 12px;
+}
+.skip-link:focus {
+  left: 8px;
+}
+
+.site {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Header */
+
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 8px 32px;
+  padding: clamp(18px, 4vh, 36px) 0 clamp(12px, 2vh, 18px);
+  border-bottom: 1px solid var(--rule);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.brand img {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  color-scheme: light;
+}
+.brand-name {
+  display: block;
+  font: 600 26px/1.1 var(--f-display);
+  letter-spacing: -0.01em;
+}
+.brand-tagline {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.brand:hover .brand-name {
+  color: var(--accent);
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.main-nav a:hover {
+  color: var(--accent);
+}
+.main-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+/* Page text */
+
+main {
+  padding: clamp(24px, 6vh, 56px) 0 0;
+}
+.dept {
+  font: clamp(14px, min(1.1vw, 2vh), 16px) / 1.4 var(--f-dept);
+  color: var(--accent);
+  margin: 0 0 clamp(6px, 1.3vh, 12px);
+}
+h1 {
+  font-size: clamp(30px, min(3vw, 5.5vh), 46px);
+  letter-spacing: -0.015em;
+  margin-bottom: clamp(10px, 2.4vh, 22px);
+}
+.lede {
+  font: 400 clamp(17px, min(1.4vw, 2.6vh), 21px) / 1.55 var(--f-display);
+  color: #5d636c;
+  margin-bottom: clamp(16px, 3.6vh, 36px);
+}
+.lede strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+.words {
+  font-size: 17.5px;
+  line-height: 1.75;
+}
+
+.premises {
+  margin-top: 36px;
+}
+
+/* Home-page map */
+
+.hero {
+  margin: 0 0 12px;
+}
+/* Narrow the map until it ends inside the first screen; --hero-top will be set by hero-map.js. */
+.hero-stage {
+  position: relative;
+  width: clamp(
+    60%,
+    (100svh - var(--hero-top, 380px) - 24px) * 2400 / 1271,
+    100%
+  );
+  margin: 0 auto;
+  aspect-ratio: 2400 / 1271;
+}
+.hero-loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Footer */
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin-top: 88px;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--rule);
+  font-size: 12px;
+  color: var(--muted);
+}
+.footer-uoft img {
+  display: block;
+  width: auto;
+  height: 36px;
+}
+.footer-uoft:hover img {
+  filter: brightness(0.75);
+}
+.footer-address {
+  padding-left: 24px;
+  border-left: 1px solid var(--rule);
+  font-style: normal;
+}
+.footer-credit {
+  margin-left: auto;
+}
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.footer-github svg {
+  fill: currentColor;
+}
+
+@media (max-width: 820px) {
+  .site {
+    padding: 0 20px;
+  }
+  .site-header {
+    grid-template-columns: 1fr;
+  }
+  .main-nav ul {
+    gap: 4px 18px;
+    margin-top: 12px;
+  }
+  main {
+    padding-top: 36px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .lede {
+    font-size: 18px;
+  }
+  .footer-address {
+    flex-basis: 100%;
+    padding-left: 0;
+    border-left: 0;
+  }
+  .footer-credit {
+    margin-left: 0;
+  }
+}
