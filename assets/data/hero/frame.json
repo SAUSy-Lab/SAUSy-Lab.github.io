@@ -1,0 +1,53 @@
+{
+  "width": 2400,
+  "height": 1271,
+  "metresPerPixel": 18.192533537814256,
+  "angle": -17,
+  "epsg": 32617,
+  "origin": [
+    629627.031530952,
+    4842771.707409535
+  ],
+  "bounds": [
+    609770.8958633768,
+    4829088.468253644,
+    653432.976354131,
+    4852209.489491923
+  ],
+  "counts": {
+    "frequencySegments": 10746,
+    "railTrips": 6895
+  },
+  "areas": [
+    {
+      "id": "downtown",
+      "name": "Downtown and the Don Valley",
+      "rect": [
+        899.28,
+        827.79,
+        329.81,
+        174.59
+      ]
+    },
+    {
+      "id": "downsview",
+      "name": "Downsview and Finch West",
+      "rect": [
+        470.08,
+        184.7,
+        329.81,
+        174.59
+      ]
+    },
+    {
+      "id": "scarborough",
+      "name": "Scarborough Centre",
+      "rect": [
+        1534.64,
+        373.31,
+        329.81,
+        174.59
+      ]
+    }
+  ]
+}

@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="assets/css/site.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"
+      defer
+    ></script>
+    <script src="assets/js/hero-map.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -54,8 +59,13 @@
           understand how cities affect society in the 21st century.
         </p>
 
-        <figure class="hero">
+        <figure class="hero" data-hero-map data-src="assets/data/hero/">
           <div class="hero-stage">
+            <canvas
+              role="img"
+              aria-label="Animated map of Toronto, turned 17 degrees to align with the street grid: TTC routes with scheduled subway, LRT and streetcar trips, then vegetation and afternoon surface temperature along the walking and cycling network."
+            ></canvas>
+            <div class="hero-tip" hidden></div>
             <div class="hero-loading">Loading map…</div>
           </div>
         </figure>
