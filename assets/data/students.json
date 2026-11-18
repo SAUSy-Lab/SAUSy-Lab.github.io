@@ -1,0 +1,204 @@
+[
+  {
+    "id": "michael-widener",
+    "group": "faculty",
+    "name": "Michael J. Widener",
+    "initials": "MW",
+    "photo": {
+      "src": "assets/img/people/michael-widener.jpg",
+      "width": 720,
+      "height": 720
+    },
+    "links": [
+      {
+        "type": "website",
+        "label": "U of T profile",
+        "url": "https://www.geography.utoronto.ca/people/directories/all-faculty/michael-widener"
+      }
+    ]
+  },
+  {
+    "id": "steven-farber",
+    "group": "faculty",
+    "name": "Steven Farber",
+    "initials": "SF",
+    "photo": {
+      "src": "assets/img/people/steven-farber.jpg",
+      "width": 720,
+      "height": 1079
+    },
+    "links": [
+      {
+        "type": "website",
+        "label": "U of T profile",
+        "url": "https://www.utsc.utoronto.ca/geography/steven-farber"
+      }
+    ]
+  },
+  {
+    "id": "ignacio-tiznado-aitken",
+    "group": "faculty",
+    "name": "Ignacio Tiznado Aitken",
+    "initials": "IT",
+    "photo": {
+      "src": "assets/img/people/ignacio-tiznado-aitken.jpg",
+      "width": 720,
+      "height": 1022
+    },
+    "links": [
+      {
+        "type": "website",
+        "label": "Website",
+        "url": "https://tiznadoaitken.cl/"
+      }
+    ]
+  },
+  {
+    "id": "christopher-higgins",
+    "group": "faculty",
+    "name": "Christopher D. Higgins",
+    "initials": "CH",
+    "photo": {
+      "src": "assets/img/people/christopher-higgins.jpg",
+      "width": 560,
+      "height": 840
+    },
+    "links": [
+      {
+        "type": "website",
+        "label": "U of T profile",
+        "url": "https://www.utsc.utoronto.ca/geography/christopher-higgins"
+      }
+    ]
+  },
+  {
+    "id": "lindsey-smith",
+    "group": "faculty",
+    "name": "Lindsey Smith",
+    "initials": "LS",
+    "photo": {
+      "src": "assets/img/people/lindsey-smith.jpg",
+      "width": 720,
+      "height": 837
+    },
+    "links": [
+      {
+        "type": "website",
+        "label": "U of T profile",
+        "url": "https://www.geography.utoronto.ca/people/directories/all-faculty/lindsey-smith"
+      }
+    ]
+  },
+  {
+    "id": "andrei-botescu",
+    "name": "Andrei Botescu",
+    "initials": "AB",
+    "photo": {
+      "src": "assets/img/people/andrei-botescu.jpg",
+      "width": 720,
+      "height": 995
+    }
+  },
+  {
+    "id": "sandesh-bhandari",
+    "name": "Sandesh Bhandari",
+    "initials": "SB",
+    "photo": {
+      "src": "assets/img/people/sandesh-bhandari.webp",
+      "width": 294,
+      "height": 339
+    }
+  },
+  {
+    "id": "frederic-cournoyer",
+    "name": "Frédéric Cournoyer",
+    "initials": "FC",
+    "photo": {
+      "src": "assets/img/people/frederic-cournoyer.png",
+      "width": 542,
+      "height": 612
+    }
+  },
+  {
+    "id": "nicole-hoh",
+    "name": "Nicole Hoh",
+    "initials": "NH",
+    "photo": {
+      "src": "assets/img/people/nicole-hoh.webp",
+      "width": 300,
+      "height": 418
+    }
+  },
+  {
+    "id": "samantha-sharp",
+    "name": "Samantha Sharp",
+    "initials": "SS",
+    "photo": {
+      "src": "assets/img/people/samantha-sharp.jpg",
+      "width": 1920,
+      "height": 1440
+    }
+  },
+  {
+    "id": "emma-cervinka",
+    "name": "Emma Cervinka",
+    "initials": "EC",
+    "photo": {
+      "src": "assets/img/people/emma-cervinka.jpg",
+      "width": 720,
+      "height": 960
+    }
+  },
+  {
+    "id": "santiago-cardona-urrea",
+    "group": "postdoc",
+    "name": "Santiago Cardona-Urrea",
+    "initials": "SC",
+    "photo": {
+      "src": "assets/img/people/santiago-cardona-urrea.jpg",
+      "width": 720,
+      "height": 998
+    }
+  },
+  {
+    "id": "ka-yiu-ng",
+    "group": "visiting",
+    "name": "Ka Yiu (Benjamin) Ng",
+    "initials": "KN",
+    "photo": {
+      "src": "assets/img/people/ka-yiu-ng.jpg",
+      "width": 720,
+      "height": 1186
+    }
+  },
+  {
+    "id": "brenn-anderson-gregson",
+    "name": "Brenn Anderson-Gregson",
+    "initials": "BA"
+  },
+  {
+    "id": "yavuz-topbas",
+    "name": "Yavuz Topbas",
+    "initials": "YT"
+  },
+  {
+    "id": "joao-pedro-parga",
+    "name": "João Pedro Parga",
+    "initials": "JP"
+  },
+  {
+    "id": "alec-davies",
+    "name": "Alec Davies",
+    "initials": "AD"
+  },
+  {
+    "id": "guangping-chen",
+    "name": "Guangping Chen",
+    "initials": "GC"
+  },
+  {
+    "id": "jie-yang",
+    "name": "Jie Yang",
+    "initials": "JY"
+  }
+]

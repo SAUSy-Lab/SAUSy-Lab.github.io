@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Members | SAUSy Lab</title>
-    <meta name="description" content="Members of the SAUSy Lab" />
+    <title>SAUSy People | SAUSy Lab</title>
+    <meta
+      name="description"
+      content="Faculty, postdocs and students of the SAUSy Lab, University of Toronto"
+    />
     <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="../assets/css/site.css" />
+    <script src="../assets/js/students.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -40,7 +44,88 @@
       </header>
 
       <main id="main">
-        <h1>Members</h1>
+        <h1>SAUSy People</h1>
+
+        <section class="group">
+          <h2>Professors &amp; Postdocs</h2>
+          <ul class="people" data-postdocs></ul>
+        </section>
+
+        <section class="group">
+          <h2>Students</h2>
+          <ul class="people" data-students>
+            <li>Loading students…</li>
+          </ul>
+          <noscript
+            ><p>Enable JavaScript to view the student list.</p></noscript
+          >
+        </section>
+
+        <section class="group">
+          <h2>Visiting Students</h2>
+          <ul class="people" data-visiting></ul>
+        </section>
+
+        <section class="group">
+          <h2>Prior Students &amp; Postdocs</h2>
+          <ul class="alumni">
+            <li><a href="http://jamaps.github.io/maps.html">Jeff Allen</a></li>
+            <li>
+              <a href="https://coss.fsu.edu/geography/faculty/8684/"
+                >Amber DeJohn</a
+              >
+            </li>
+            <li>
+              <a href="https://planning.unc.edu/faculty/palm/">Matthew Palm</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kamilleleclair/"
+                >Kamille LeClair</a
+              >
+            </li>
+            <li>
+              <a href="http://elnazyousefzadeh.com/">Elnaz Yousefzadeh Barri</a>
+            </li>
+            <li>
+              <a
+                href="https://scholar.google.ca/citations?user=oOQobf4AAAAJ&amp;hl=en"
+                >Bochu Liu</a
+              >
+            </li>
+            <li>
+              <a href="https://alextabascio.wordpress.com/">Alex Tabascio</a>
+            </li>
+            <li><a href="https://www.mischayoung.com/">Mischa Young</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/nate-wessel/">Nate Wessel</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/robert-nutifafa-arku/"
+                >Robert Arku</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/marianne-l-075944218/"
+                >Marianne Lahaie Luna</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.geography.utoronto.ca/people/directories/graduate-students/paromita-nakshi"
+                >Paromita Nakshi</a
+              >
+            </li>
+            <li><span class="name">Yixue Zhang</span></li>
+            <li><span class="name">Reilly Plue</span></li>
+            <li><span class="name">JieLan Xu</span></li>
+            <li><span class="name">Tara Kamal Ahmadi</span></li>
+            <li><span class="name">Hannah Linnea Wilkinson</span></li>
+            <li><span class="name">Adam Didycz</span></li>
+            <li><span class="name">Robert Keel</span></li>
+            <li><span class="name">Katya Valisyeva</span></li>
+            <li><span class="name">Newsha Modjrian</span></li>
+          </ul>
+        </section>
       </main>
 
       <footer class="site-footer">
