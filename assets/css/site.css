@@ -198,14 +198,20 @@ h1 {
 }
 /* --hero-top is set by hero-map.js */
 .hero-stage {
-  position: relative;
-  width: clamp(
+  --hero-w: clamp(
     60%,
     (100svh - var(--hero-top, 380px) - 24px) * 2400 / 1271,
     100%
   );
-  margin: 0 auto;
+  position: relative;
+  width: var(--hero-w);
+  /* frame's empty bottom band */
+  margin: 0 auto calc(var(--hero-w) * -0.02);
   aspect-ratio: 2400 / 1271;
+}
+/* text above the overlaping canvas */
+.hero + .words {
+  position: relative;
 }
 .hero-stage canvas {
   position: absolute;
