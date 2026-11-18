@@ -1,0 +1,68 @@
+/* only for publications-- shared site styles are in site.css. */
+
+.publication-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.publication-year {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 24px;
+  padding-top: 28px;
+  margin-top: 32px;
+  border-top: 1px solid var(--rule);
+  scroll-margin-top: 24px;
+}
+
+.publication-year h2 {
+  font-size: 24px;
+}
+
+.publication-list {
+  min-width: 0;
+}
+
+.publication-list li + li {
+  border-top: 1px solid var(--rule);
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.publication-list h3 {
+  font-size: 20px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.publication-list h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.publication-list h3 a:hover {
+  text-decoration: underline;
+}
+
+.publication-authors {
+  margin: 8px 0 4px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.publication-journal {
+  margin: 0;
+  font-size: 13px;
+  color: #5d636c;
+}
+
+@media (max-width: 600px) {
+  .publication-year {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}
