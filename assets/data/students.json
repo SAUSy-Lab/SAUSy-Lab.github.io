@@ -9,11 +9,12 @@
       "width": 720,
       "height": 720
     },
+    "profilePath": "members/michael-widener/",
     "links": [
       {
         "type": "website",
         "label": "U of T profile",
-        "url": "https://www.geography.utoronto.ca/people/directories/all-faculty/michael-widener"
+        "url": "https://discover.research.utoronto.ca/21682-michael-widener"
       }
     ]
   },
@@ -27,11 +28,27 @@
       "width": 720,
       "height": 1079
     },
+    "profilePath": "members/steven-farber/",
     "links": [
       {
-        "type": "website",
-        "label": "U of T profile",
-        "url": "https://www.utsc.utoronto.ca/geography/steven-farber"
+        "type": "google-scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=zmgDLIAAAAAJ&hl=en"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/steven-farber/"
+      },
+      {
+        "type": "custom",
+        "label": "Mobilizing Justice",
+        "url": "https://www.mobilizingjustice.ca"
+      },
+      {
+        "type": "custom",
+        "label": "U of T Mobility Network",
+        "url": "https://www.mobilitynetwork.utoronto.ca"
       }
     ]
   },
@@ -45,7 +62,18 @@
       "width": 720,
       "height": 1022
     },
+    "profilePath": "members/ignacio-tiznado-aitken/",
     "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ignacio-tiznado-aitken/"
+      },
+      {
+        "type": "google-scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=hdXPmAkAAAAJ&hl=en"
+      },
       {
         "type": "website",
         "label": "Website",
@@ -63,11 +91,12 @@
       "width": 560,
       "height": 840
     },
+    "profilePath": "members/christopher-higgins/",
     "links": [
       {
         "type": "website",
-        "label": "U of T profile",
-        "url": "https://www.utsc.utoronto.ca/geography/christopher-higgins"
+        "label": "Website",
+        "url": "https://higgicd.github.io"
       }
     ]
   },
@@ -97,7 +126,15 @@
       "src": "assets/img/people/andrei-botescu.jpg",
       "width": 720,
       "height": 995
-    }
+    },
+    "profilePath": "members/andrei-botescu/",
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/andrei-botescu"
+      }
+    ]
   },
   {
     "id": "sandesh-bhandari",
@@ -107,7 +144,25 @@
       "src": "assets/img/people/sandesh-bhandari.webp",
       "width": 294,
       "height": 339
-    }
+    },
+    "profilePath": "members/sandesh-bhandari/",
+    "links": [
+      {
+        "type": "github",
+        "label": "GitHub",
+        "url": "https://github.com/snes19xx"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/snes19xx/"
+      },
+      {
+        "type": "website",
+        "label": "Personal Website",
+        "url": "https://snes19xx.github.io/"
+      }
+    ]
   },
   {
     "id": "frederic-cournoyer",
@@ -117,7 +172,15 @@
       "src": "assets/img/people/frederic-cournoyer.png",
       "width": 542,
       "height": 612
-    }
+    },
+    "profilePath": "members/frederic-cournoyer/",
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/frederic-cournoyer/"
+      }
+    ]
   },
   {
     "id": "nicole-hoh",
@@ -127,7 +190,15 @@
       "src": "assets/img/people/nicole-hoh.webp",
       "width": 300,
       "height": 418
-    }
+    },
+    "profilePath": "members/nicole-hoh/",
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/nicolehoh/"
+      }
+    ]
   },
   {
     "id": "samantha-sharp",
@@ -137,7 +208,8 @@
       "src": "assets/img/people/samantha-sharp.jpg",
       "width": 1920,
       "height": 1440
-    }
+    },
+    "profilePath": "members/samantha-sharp/"
   },
   {
     "id": "emma-cervinka",
@@ -147,7 +219,25 @@
       "src": "assets/img/people/emma-cervinka.jpg",
       "width": 720,
       "height": 960
-    }
+    },
+    "profilePath": "members/emma-cervinka/",
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/emmacervinka/"
+      },
+      {
+        "type": "google-scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.ca/citations?user=jhzT0owAAAAJ&hl=en"
+      },
+      {
+        "type": "orcid",
+        "label": "ORCID",
+        "url": "https://orcid.org/0009-0000-5301-9926"
+      }
+    ]
   },
   {
     "id": "santiago-cardona-urrea",
@@ -158,7 +248,35 @@
       "src": "assets/img/people/santiago-cardona-urrea.jpg",
       "width": 720,
       "height": 998
-    }
+    },
+    "profilePath": "members/santiago-cardona-urrea/",
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/santiago-cardona-urrea/"
+      },
+      {
+        "type": "google-scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=w5m_V-sAAAAJ&hl=es"
+      },
+      {
+        "type": "orcid",
+        "label": "ORCID",
+        "url": "https://orcid.org/0000-0002-5032-3145"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "url": "https://github.com/scardonau94"
+      },
+      {
+        "type": "website",
+        "label": "Personal Website",
+        "url": "https://scardonau94.github.io/"
+      }
+    ]
   },
   {
     "id": "ka-yiu-ng",
@@ -169,12 +287,28 @@
       "src": "assets/img/people/ka-yiu-ng.jpg",
       "width": 720,
       "height": 1186
-    }
+    },
+    "profilePath": "members/ka-yiu-ng/",
+    "links": [
+      {
+        "type": "google-scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=uxMGJ1sAAAAJ&hl=en"
+      }
+    ]
   },
   {
     "id": "brenn-anderson-gregson",
     "name": "Brenn Anderson-Gregson",
-    "initials": "BA"
+    "initials": "BA",
+    "profilePath": "members/brenn-anderson-gregson/",
+    "links": [
+      {
+        "type": "github",
+        "label": "GitHub",
+        "url": "https://github.com/CrepuscularCremini/"
+      }
+    ]
   },
   {
     "id": "yavuz-topbas",

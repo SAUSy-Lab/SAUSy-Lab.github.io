@@ -72,7 +72,7 @@
       image.height = student.photo.height;
       if (!isProfile) image.loading = "lazy";
       container.append(image);
-    } else if (!isProfile) {
+    } else {
       container.append(element("span", "initials", student.initials));
     }
     return container;
@@ -121,7 +121,7 @@
       );
       bio.append(keywords);
     }
-    content.append(bio);
+    if (bio.childElementCount) content.append(bio);
     profile.replaceChildren(photo(student, true), content);
   }
 

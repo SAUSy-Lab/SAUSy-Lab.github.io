@@ -338,6 +338,105 @@ h1 {
   white-space: nowrap;
 }
 
+/* Profile */
+
+.crumbs {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+.crumbs a {
+  color: var(--muted);
+}
+.profile {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0 56px;
+  align-items: start;
+}
+.profile-photo img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.profile-photo .initials {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  background: var(--accent-tint);
+  border-radius: 2px;
+  font: 400 48px var(--f-display);
+  color: var(--accent);
+}
+.profile h1 {
+  margin-bottom: 6px;
+}
+.profile .role {
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.profile .dept {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+.profile .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+}
+.profile-link--icon {
+  justify-content: center;
+  width: 28px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.profile-link--icon:hover {
+  color: var(--accent);
+}
+.profile-link svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+.profile .bio {
+  max-width: 38em;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+.profile .keywords {
+  font-size: 13px;
+  color: var(--muted);
+}
+.profile .keywords strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.profile dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 24px;
+  margin: 28px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+}
+.profile dt {
+  color: var(--muted);
+}
+.profile dd {
+  margin: 0;
+  color: var(--ink);
+}
+
 /* Footer */
 
 .site-footer {
@@ -395,6 +494,13 @@ h1 {
   }
   .lede {
     font-size: 18px;
+  }
+  .profile {
+    grid-template-columns: 1fr;
+  }
+  .profile-photo {
+    max-width: 220px;
+    margin-bottom: 24px;
   }
   .footer-address {
     flex-basis: 100%;
