@@ -4,12 +4,20 @@
     "group": "faculty",
     "name": "Michael J. Widener",
     "initials": "MW",
+    "profilePath": "members/michael-widener/",
     "photo": {
       "src": "assets/img/people/michael-widener.jpg",
       "width": 720,
       "height": 720
     },
-    "profilePath": "members/michael-widener/",
+    "role": "Professor",
+    "profileRole": "Professor, Quantitative health geography",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Michael J. Widener, Professor of Geography & Planning at the University of Toronto and member of the SAUSy Lab, researching health geography, the built environment and mobility.",
+    "bio": [
+      "Michael is a quantitative health geographer with interests in food retail, mobility, access to health care, and urban environments."
+    ],
+    "keywords": ["health geography", "built environment", "mobility"],
     "links": [
       {
         "type": "website",
@@ -23,12 +31,22 @@
     "group": "faculty",
     "name": "Steven Farber",
     "initials": "SF",
+    "profilePath": "members/steven-farber/",
     "photo": {
       "src": "assets/img/people/steven-farber.jpg",
       "width": 720,
       "height": 1079
     },
-    "profilePath": "members/steven-farber/",
+    "role": "Professor",
+    "profileRole": "Professor, Transportation geography and urban mobility",
+    "department": "Department of Human Geography, University of Toronto Scarborough",
+    "description": "Steven Farber, Professor of Human Geography at the University of Toronto Scarborough and member of the SAUSy Lab, researching transportation equity and accessibility.",
+    "bio": [
+      "Steven is a Professor of Human Geography at the University of Toronto Scarborough, specializing in transportation geography and urban mobility.",
+      "Steven's research examines the relationships between transportation systems, social equity, accessibility, and participation in everyday life, with a particular focus on transport poverty and the ways mobility shapes social and economic opportunities. A central interest is how transportation and land-use policies can contribute to more equitable, sustainable, and accessible cities.",
+      "Steven also leads large interdisciplinary research partnerships that connect academic research with transportation planning and public policy, including the Mobilizing Justice partnership and the University of Toronto Mobility Network."
+    ],
+    "keywords": ["Transportation Equity", "Accessibility", "Spatial Analysis"],
     "links": [
       {
         "type": "google-scholar",
@@ -57,12 +75,27 @@
     "group": "faculty",
     "name": "Ignacio Tiznado Aitken",
     "initials": "IT",
+    "profilePath": "members/ignacio-tiznado-aitken/",
     "photo": {
       "src": "assets/img/people/ignacio-tiznado-aitken.jpg",
       "width": 720,
       "height": 1022
     },
-    "profilePath": "members/ignacio-tiznado-aitken/",
+    "role": "Assistant Professor",
+    "profileRole": "Assistant Professor, Transport geography and planning",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Ignacio Tiznado Aitken, Assistant Professor of Geography & Planning at the University of Toronto and member of the SAUSy Lab, researching transport geography, transport planning and transport inequalities.",
+    "bio": [
+      "Ignacio is an Assistant Professor in the Department of Geography and Planning at the University of Toronto and Associate Director of the Mobilizing Justice project. Ignacio holds a PhD in Transportation Engineering from the Pontificia Universidad Católica de Chile, was a postgraduate researcher at the Institute for Transport Studies at the University of Leeds (2018–2019), worked as a postdoctoral researcher at the Center for Sustainable Urban Development (2020–2021), and served as research coordinator of the Suburban Mobilities Cluster (2021–2023).",
+      "Using multi-sourced data and spatial, mixed (quantitative and qualitative) methods, Ignacio's research covers a wide range of topics in transport and land use planning in urban and suburban areas, particularly: (i) geospatial analytics of transport systems, especially public transport, considering system performance, travel behaviour and user experiences; (ii) transport equity and the distribution of transport-related benefits and burdens across space for different population groups; and (iii) sustainable transport and urban space allocation policies that consider new mobility trends such as micromobility."
+    ],
+    "keywords": [
+      "Transport geography",
+      "transport planning",
+      "transport inequalities",
+      "spatial analysis",
+      "sustainable urban development"
+    ],
     "links": [
       {
         "type": "linkedin",
@@ -86,12 +119,27 @@
     "group": "faculty",
     "name": "Christopher D. Higgins",
     "initials": "CH",
+    "profilePath": "members/christopher-higgins/",
     "photo": {
       "src": "assets/img/people/christopher-higgins.jpg",
       "width": 560,
       "height": 840
     },
-    "profilePath": "members/christopher-higgins/",
+    "role": "Associate Professor",
+    "profileRole": "Associate Professor, Quantitative urban geography",
+    "department": "Department of Human Geography, University of Toronto Scarborough",
+    "description": "Christopher D. Higgins, Associate Professor of Human Geography at the University of Toronto Scarborough and member of the SAUSy Lab, researching accessibility, urban form and spatial analysis.",
+    "bio": [
+      "Christopher is a quantitative geographer whose research focuses on the relationship between form and function in cities.",
+      "Using the tools and methods of GIS and geographic data science, Christopher's work captures and models the physical form and infrastructure of the city, its urban networks and the flows of people, goods, and information they facilitate, and the use of the city as an area or volume for engaging in activities. By providing a window into how the dynamic state of the city impacts and is impacted by social, environmental, and economic processes, this work seeks to better inform policy and planning interventions and promote more sustainable urban outcomes."
+    ],
+    "keywords": [
+      "Accessibility and travel behaviour",
+      "spatial and spatio-temporal analysis",
+      "Urban morphology and urban volumetrics",
+      "Geodemographics and demand modelling",
+      "Urban policy and planning"
+    ],
     "links": [
       {
         "type": "website",
@@ -110,6 +158,8 @@
       "width": 720,
       "height": 837
     },
+    "bio": [],
+    "keywords": [],
     "links": [
       {
         "type": "website",
@@ -244,12 +294,27 @@
     "group": "postdoc",
     "name": "Santiago Cardona-Urrea",
     "initials": "SC",
+    "profilePath": "members/santiago-cardona-urrea/",
     "photo": {
       "src": "assets/img/people/santiago-cardona-urrea.jpg",
       "width": 720,
       "height": 998
     },
-    "profilePath": "members/santiago-cardona-urrea/",
+    "role": "Postdoc",
+    "profileRole": "Postdoctoral researcher, Transport equity and accessibility",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Santiago Cardona-Urrea, postdoctoral researcher at the University of Toronto and member of the SAUSy Lab, researching accessibility and transport equity.",
+    "bio": [
+      "Santiago is a transport and accessibility researcher with a PhD from Utrecht University. The main question driving this research is how transport can make cities and regions fairer.",
+      "The focus is on measures and indicators of transport equity, including how to calculate accessibility and the distribution of transport resources, with particular attention to sustainable modes such as walking, cycling, and public transport. Methodological expertise relies on spatial and quantitative analysis, including GIS, discrete choice models and factor analysis."
+    ],
+    "keywords": [
+      "Accessibility",
+      "Transport Equity",
+      "Public Transport",
+      "Travel Behaviour",
+      "Transport Resilience"
+    ],
     "links": [
       {
         "type": "linkedin",
