@@ -172,12 +172,26 @@
     "id": "andrei-botescu",
     "name": "Andrei Botescu",
     "initials": "AB",
+    "profilePath": "members/andrei-botescu/",
     "photo": {
       "src": "assets/img/people/andrei-botescu.jpg",
       "width": 720,
       "height": 995
     },
-    "profilePath": "members/andrei-botescu/",
+    "role": "MScPl student",
+    "profileRole": "MScPl student, Transportation planning and infrastructure",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Andrei Botescu, MScPl student in transportation planning at the University of Toronto and member of the SAUSy Lab.",
+    "bio": [
+      "Andrei is a Master of Science in Planning (MScPl) student at the University of Toronto, specializing in transportation planning and infrastructure. He previously completed an Honours Bachelor of Arts in Human Geography and French at UTSC.",
+      "His research interests focus on transportation planning and accessibility, and suburb-to-suburb transit, particularly how transportation networks and urban form influence mobility opportunities. As a researcher with Mobilizing Justice and SAUSy Lab, he worked with the National Survey of Transport Poverty to examine transportation experiences and inequalities across different populations and geographic contexts.",
+      "His methodological interests include quantitative data analysis, GIS, statistical modelling, and spatial analysis to better understand transportation disadvantage and accessibility."
+    ],
+    "keywords": [
+      "transportation planning",
+      "transportation accessibility",
+      "suburb-to-suburb transit"
+    ],
     "links": [
       {
         "type": "linkedin",
@@ -190,12 +204,28 @@
     "id": "sandesh-bhandari",
     "name": "Sandesh Bhandari",
     "initials": "SB",
+    "profilePath": "members/sandesh-bhandari/",
     "photo": {
       "src": "assets/img/people/sandesh-bhandari.webp",
       "width": 294,
       "height": 339
     },
-    "profilePath": "members/sandesh-bhandari/",
+    "role": "MScPl student",
+    "profileRole": "MScPl student, Spatial statistics and Urban analytics",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Sandesh Bhandari is an MScPl student at the University of Toronto whose research focuses on spatial statistics, machine learning, and urban spatial analysis.",
+    "bio": [
+      "Sandesh Bhandari is a Master of Science in Planning (MScPl) student at the University of Toronto, with an Honours Bachelor of Science.",
+      "His research interests focus on the application of spatial statistics and machine learning to urban environments, exploring how cities can be modeled and understood using geographic, remote sensing, and Earth systems data at fine spatial scales.",
+      "His current research examines urban heat exposure across transportation networks and housing intensification along Toronto’s major streets using geospatial analysis and machine learning."
+    ],
+    "keywords": [
+      "Spatial Statistics",
+      "Machine Learning",
+      "Urban Analytics",
+      "Remote Sensing",
+      "Data Visualization"
+    ],
     "links": [
       {
         "type": "github",
@@ -218,12 +248,26 @@
     "id": "frederic-cournoyer",
     "name": "Frédéric Cournoyer",
     "initials": "FC",
+    "profilePath": "members/frederic-cournoyer/",
     "photo": {
       "src": "assets/img/people/frederic-cournoyer.png",
       "width": 542,
       "height": 612
     },
-    "profilePath": "members/frederic-cournoyer/",
+    "role": "PhD student",
+    "profileRole": "PhD student, Accessibility and transportation planning",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Frédéric Cournoyer, PhD student in geography at the University of Toronto and member of the SAUSy Lab, researching accessibility, transportation and urban planning.",
+    "bio": [
+      "Frédéric is a PhD student in geography at the University of Toronto and holds a master’s degree in civil engineering from Polytechnique Montréal.",
+      "His research lies at the intersection of transportation and urban planning, with a particular focus on accessibility to destinations. In previous projects, he has examined the 15-minute city, park accessibility, and the integration of accessibility indicators into planning practice."
+    ],
+    "keywords": [
+      "Accessibility",
+      "Sustainable Transportation",
+      "Transit-Oriented Development",
+      "15-minute city"
+    ],
     "links": [
       {
         "type": "linkedin",
@@ -236,12 +280,27 @@
     "id": "nicole-hoh",
     "name": "Nicole Hoh",
     "initials": "NH",
+    "profilePath": "members/nicole-hoh/",
     "photo": {
       "src": "assets/img/people/nicole-hoh.webp",
       "width": 300,
       "height": 418
     },
-    "profilePath": "members/nicole-hoh/",
+    "role": "MA student",
+    "profileRole": "MA student, Human geography",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Nicole Hoh, MA student in Human Geography at the University of Toronto researching physical activity, active transportation and the built environment.",
+    "bio": [
+      "Nicole graduated in 2025 with a Bachelor's degree in Kinesiology from the University of Toronto, where she focused on metabolic health and exercise physiology. She also worked as an Undergraduate research assistant in the BOSM Lab under Dr. Timothy Burkhart, exploring the impacts of iliopsoas tendon release surgery on patients with FAIS. She began her MA in Human Geography in 2025 and will graduate in 2027.",
+      "Her thesis focuses on using objective methods to examine the relationship between physical activity levels in university students and the modes of transport they use to travel between home and campus. Her study examines students' GPS commuting tracks, self-reported modes of transport, and accelerometer-measured physical activity over 48 hours to establish a complete activity and transportation profile for each participant. Her study hopes to find correlations between modes of transportation and physical activity levels, as well as with environmental active living scores and participant demographics. Nicole has also worked as a research assistant, performing GIS mapping of youth emotions and perceptions of healthy places in high-rise neighbourhoods."
+    ],
+    "keywords": [
+      "Active Transportation",
+      "Physical Activity",
+      "Built Environment",
+      "Metabolic Disease",
+      "GPS Track Mapping"
+    ],
     "links": [
       {
         "type": "linkedin",
@@ -254,23 +313,52 @@
     "id": "samantha-sharp",
     "name": "Samantha Sharp",
     "initials": "SS",
+    "profilePath": "members/samantha-sharp/",
     "photo": {
       "src": "assets/img/people/samantha-sharp.jpg",
       "width": 1920,
       "height": 1440
     },
-    "profilePath": "members/samantha-sharp/"
+    "role": "MA student",
+    "profileRole": "MA student, Health geography",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Samantha Sharp, MA student at the University of Toronto researching health geography, time-use and caregiving.",
+    "bio": [
+      "Hi! My name is Samantha and I'm an MA student in the Department of Geography and Planning at the University of Toronto. In 2026 I graduated from Western University with an HBA in GIS. As a graduate student, I am interested in research that uses spatial models and analysis to support questions related to health and time-use geographies. My thesis follows this interest, looking at the time-use sequencing and environments of caregivers in Canada."
+    ],
+    "keywords": [
+      "Spatial Analysis",
+      "Health Geography",
+      "Time-Use",
+      "Caregiving",
+      "Built Environment"
+    ],
+    "links": []
   },
   {
     "id": "emma-cervinka",
     "name": "Emma Cervinka",
     "initials": "EC",
+    "profilePath": "members/emma-cervinka/",
     "photo": {
       "src": "assets/img/people/emma-cervinka.jpg",
       "width": 720,
       "height": 960
     },
-    "profilePath": "members/emma-cervinka/",
+    "role": "PhD candidate",
+    "profileRole": "PhD candidate, Youth geographies and active transportation",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Emma Cervinka, PhD candidate in the Department of Geography and Planning at the University of Toronto, researching youth geographies, active transportation and urban design.",
+    "bio": [
+      "Emma Cervinka is a PhD candidate in the Department of Geography and Planning at the University of Toronto. She holds a Master of Urban Design from the University of British Columbia and a Bachelor of Landscape Architecture from the University of Guelph.",
+      "Her research interests include youth geographies, active transportation, urban design and planning policy, and mixed methods research. Her doctoral research focuses on how active travel contributes to young people’s sense of place and belonging in urban environments. She draws on her design education and professional experience to inform research on urban design that encourages active transportation, fosters community engagement and promotes public health."
+    ],
+    "keywords": [
+      "Urban Design",
+      "Active Transportation",
+      "Youth Geographies",
+      "Mixed Methods Research"
+    ],
     "links": [
       {
         "type": "linkedin",
@@ -348,12 +436,26 @@
     "group": "visiting",
     "name": "Ka Yiu (Benjamin) Ng",
     "initials": "KN",
+    "profilePath": "members/ka-yiu-ng/",
     "photo": {
       "src": "assets/img/people/ka-yiu-ng.jpg",
       "width": 720,
       "height": 1186
     },
-    "profilePath": "members/ka-yiu-ng/",
+    "role": "Visiting PhD student",
+    "profileRole": "Visiting PhD student, GIScience and spatial accessibility",
+    "department": "Department of Geography, University of Hong Kong",
+    "description": "Ka Yiu (Benjamin) Ng, PhD candidate at the University of Hong Kong and visiting student at the University of Toronto, researching GIScience, spatial accessibility and transport geography.",
+    "bio": [
+      "Ka Yiu is a PhD candidate in the Department of Geography at the University of Hong Kong and a visiting student at the University of Toronto. Their research lies at the intersection of GIScience, transport geography, and health geography, with spatial access as a central theme, examining how the built environment, mobility, and accessibility shape everyday opportunities and wellbeing.",
+      "Methodologically, Ka Yiu draws on GIS, spatial analysis, accessibility modelling, transport data analytics, and mixed-method approaches to investigate human mobility and access. Current work extends these questions to pet-accompanied travel, exploring pet-friendly transport schemes and their implications for mobility practices. Ka Yiu is also interested in the ontology of errors in spatial accessibility modelling and its methodological consequences."
+    ],
+    "keywords": [
+      "GIScience",
+      "Spatial Accessibility",
+      "Transport Geography",
+      "Health Geography"
+    ],
     "links": [
       {
         "type": "google-scholar",
@@ -367,6 +469,21 @@
     "name": "Brenn Anderson-Gregson",
     "initials": "BA",
     "profilePath": "members/brenn-anderson-gregson/",
+    "role": "PhD candidate",
+    "profileRole": "PhD candidate, GIScience and transit accessibility",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Brenn Anderson-Gregson, PhD candidate in planning at the University of Toronto and member of the SAUSy Lab, researching transit accessibility and mobility equity.",
+    "bio": [
+      "Brenn is a PhD candidate in Planning at the University of Toronto. Their research sits at the intersection of GIScience, transportation planning, and mobility equity, with a central focus on measuring and evaluating transit accessibility.",
+      "They use computational and statistical methods to investigate whether objective accessibility metrics reflect real-world travel experiences, and to determine the most effective strategies for increasing and prioritizing transportation investment. Recent projects include testing foundation model embeddings for predicting accessibility across Canada’s largest census metropolitan areas, and analyzing nationally representative survey data to understand the gap between calculated transit access and people’s self-assessed transportation sufficiency.",
+      "Brenn is also interested in where bike paths, public transit lines, and brewery locations meet, examining the brewing landscape through interactive maps and creative cartography."
+    ],
+    "keywords": [
+      "Transportation Justice",
+      "Spatial Analysis",
+      "Active and Public Transportation",
+      "Breweries"
+    ],
     "links": [
       {
         "type": "github",
@@ -378,26 +495,41 @@
   {
     "id": "yavuz-topbas",
     "name": "Yavuz Topbas",
-    "initials": "YT"
+    "initials": "YT",
+    "bio": [],
+    "keywords": [],
+    "links": []
   },
   {
     "id": "joao-pedro-parga",
     "name": "João Pedro Parga",
-    "initials": "JP"
+    "initials": "JP",
+    "bio": [],
+    "keywords": [],
+    "links": []
   },
   {
     "id": "alec-davies",
     "name": "Alec Davies",
-    "initials": "AD"
+    "initials": "AD",
+    "bio": [],
+    "keywords": [],
+    "links": []
   },
   {
     "id": "guangping-chen",
     "name": "Guangping Chen",
-    "initials": "GC"
+    "initials": "GC",
+    "bio": [],
+    "keywords": [],
+    "links": []
   },
   {
     "id": "jie-yang",
     "name": "Jie Yang",
-    "initials": "JY"
+    "initials": "JY",
+    "bio": [],
+    "keywords": [],
+    "links": []
   }
 ]
