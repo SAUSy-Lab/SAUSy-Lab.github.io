@@ -1,75 +1,62 @@
-<!doctype html>
+---
+layout: null
+title: Posts
+---
+{%- assign root = "../" -%}
+<!DOCTYPE html>
 <html lang="en-CA">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Posts | SAUSy Lab</title>
-    <meta name="description" content="Posts from the SAUSy Lab" />
-    <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
-    />
-    <link rel="stylesheet" href="../assets/css/site.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="site">
-      <header class="site-header">
-        <a class="brand" href="../">
-          <img src="../assets/img/logo.svg" alt="" width="44" height="44" />
-          <span>
-            <span class="brand-name">SAUSy Lab</span>
-            <span class="brand-tagline"
-              >Spatial Analysis of Urban Systems at the University of
-              Toronto</span
-            >
-          </span>
-        </a>
-        <nav class="main-nav" aria-label="Main">
-          <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="../members/">Members</a></li>
-            <li><a href="../recent-pubs/">Publications</a></li>
-            <li><a href="./" aria-current="page">Posts</a></li>
-            <li><a href="../mcrs/">MCRS</a></li>
-          </ul>
-        </nav>
-      </header>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Posts | SAUSy Lab</title>
+<meta name="description" content="News, conference notes and analysis from the SAUSy Lab, University of Toronto.">
+<link rel="icon" href="{{ root }}assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<link rel="stylesheet" href="{{ root }}assets/css/posts.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site">
 
-      <main id="main">
-        <h1>Posts</h1>
-      </main>
+  {% include site-header.html root=root %}
 
-      <footer class="site-footer">
-        <a class="footer-uoft" href="https://www.utoronto.ca"
-          ><img
-            src="../assets/img/uoft-grey.png"
-            alt="University of Toronto"
-            width="98"
-            height="36"
-        /></a>
-        <address class="footer-address">
-          Sidney Smith Hall, 100 St. George Street, Toronto
-        </address>
-        <span class="footer-credit"
-          >© SAUSy Lab, <i>Sic semper indicio aperto!</i></span
-        >
-        <a class="footer-github" href="https://github.com/SAUSy-Lab">
-          <svg
-            viewBox="0 0 24 24"
-            width="16"
-            height="16"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <use href="../assets/img/profile-links.svg#github"></use>
-          </svg>
-          GitHub
-        </a>
-      </footer>
+  <main id="main">
+    <h1>Posts</h1>
+    {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    <nav class="post-years" aria-label="Post years">
+      {% for year in years %}<a href="#posts-{{ year.name }}" data-year="{{ year.name }}">{{ year.name }}</a>
+      {% endfor %}
+    </nav>
+    {% assign categories = site.posts | map: "category" | compact | uniq | sort %}
+    <div class="post-categories" role="group" aria-label="Filter posts by category" data-category-picker hidden>
+      <button type="button" data-category="" aria-pressed="true">All</button>
+      {% for category in categories %}<button type="button" data-category="{{ category | slugify }}" aria-pressed="false">{{ category }}</button>
+      {% endfor %}
     </div>
-  </body>
+
+    {% for year in years %}
+    <section class="post-year" id="posts-{{ year.name }}" aria-labelledby="year-{{ year.name }}">
+      <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+      <ul class="post-list" role="list">
+        {% for post in year.items %}
+        <li data-category="{{ post.category | slugify }}">
+          {% if post.category %}<p class="post-category"><a href="?category={{ post.category | slugify }}">{{ post.category }}</a></p>{% endif %}
+          <h3><a href="{{ root }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h3>
+          {% include post-meta.html post=post %}
+          {% assign summary = post.excerpt | strip_html | normalize_whitespace | truncatewords: 40 %}
+          {% if summary != "" %}<p class="post-summary">{{ summary }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </main>
+
+  {% include site-footer.html root=root %}
+</div>
+<script src="{{ root }}assets/js/posts.js"></script>
+</body>
 </html>

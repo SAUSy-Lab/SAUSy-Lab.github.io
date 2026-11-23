@@ -1,0 +1,60 @@
+{%- comment -%} one ../ per folder level {%- endcomment -%}
+{%- assign parts = page.url | split: "/" -%}
+{%- capture root -%}{% for i in (2..parts.size) %}../{% endfor %}{%- endcapture -%}
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | SAUSy Lab</title>
+<meta name="description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<link rel="icon" href="{{ root }}assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css">
+<link rel="stylesheet" href="{{ root }}assets/css/posts.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site">
+
+  {% include site-header.html root=root %}
+
+  <main id="main">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ root }}posts/">Posts</a> / <span>{{ page.date | date: "%Y" }}</span></nav>
+
+    <article class="post">
+      <header class="post-header">
+        {% if page.category %}<p class="post-category" data-category="{{ page.category | slugify }}"><a href="{{ root }}posts/?category={{ page.category | slugify }}">{{ page.category }}</a></p>{% endif %}
+        <h1>{{ page.title }}</h1>
+        {% include post-meta.html post=page %}
+      </header>
+      {% if page.image %}
+      <div class="post-columns">
+        <div class="post-body">
+          {{ content }}
+        </div>
+        <figure class="post-aside">
+          <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+        </figure>
+      </div>
+      {% else %}
+      <div class="post-body">
+        {{ content }}
+      </div>
+      {% endif %}
+    </article>
+
+    {% if page.previous or page.next %}
+    <nav class="post-nav" aria-label="More posts">
+      {% if page.previous %}<a class="post-nav-older" href="{{ root }}{{ page.previous.url | remove_first: '/' }}"><span>Older</span>{{ page.previous.title }}</a>{% endif %}
+      {% if page.next %}<a class="post-nav-newer" href="{{ root }}{{ page.next.url | remove_first: '/' }}"><span>Newer</span>{{ page.next.title }}</a>{% endif %}
+    </nav>
+    {% endif %}
+  </main>
+
+  {% include site-footer.html root=root %}
+</div>
+</body>
+</html>
