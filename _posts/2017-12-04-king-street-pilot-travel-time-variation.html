@@ -1,0 +1,117 @@
+---
+title: "Travel time variation on the King Street pilot project"
+date: 2017-12-04 08:24:00 -0500
+author: "Nate Wessel"
+category: "Analysis"
+tags: ["AVL", "City of Toronto", "Jeff Allen", "King Street", "Nate Wessel", "NextBus API", "R", "Steven Farber", "Toronto Transit Commission", "transit", "TTC"]
+---
+
+<p><a href="/2017/11/king-street-transit-pilot-project/">Last week</a>, we looked at transit data from the area around the King Street pilot project and noted increased average streetcar speeds across most times of day in the area effected by the project. There were a lot of things that we didn’t address in that post though: headway variability, congestion effects on nearby streets, and variability in travel times to indicate just a few. In this post, we’ll be taking a closer look at variability in travel times through the pilot project area (King Street between Bathurst and Jarvis). We’ll also take a quick look at a control case on a different section of King Street to see if travel times changed there as well or just in the section directly effected by the pilot. There’s a lot more to be done on this topic, but we’re just going to eat this elephant one bite at a time.</p>
+
+<p>So! We’ve accumulated about another week’s worth of data, and now have about 27 days of pre-pilot observation, 16 days post.</p>
+
+<figure aria-describedby="caption-attachment-175" id="attachment_175"><img alt="" height="500" loading="lazy" src="/assets/img/posts/king-street-pilot-travel-time-variation/bathurst-to-jarvis-king-st-travel-times.png" width="800"/><figcaption id="caption-attachment-175">Vehicle travel times on King between Bathurst and Jarvis, showing times for which we have data. The blank spot is due to a database issue. The blue lime marks the start of the pilot project and the red line shows a smoothed average.</figcaption></figure>
+
+<p>As we noted before, the above chart seems to show a pretty clear change between mean travel times before and after the change. We looked at this as a smoothed average over the course of the day and saw that indeed, mean travel times appear to be falling, especially in the peaks when most people are travelling, and when the pilot project presumably makes the biggest cut in automobile traffic.</p>
+
+<figure aria-describedby="caption-attachment-146" id="attachment_146"><img alt="" height="420" loading="lazy" src="/assets/img/posts/king-street-pilot-travel-time-variation/king_eastbound.png" width="640"/><figcaption id="caption-attachment-146">Black is pre-pilot, red post-. (chart is from previous post)</figcaption></figure>
+
+<p>What we didn’t explore last time was the variability around that mean, which is an important measure of reliability. But before I get any further, I want to note right up front that what we’re measuring here is the time it takes a vehicle (streetcar or bus) to go between two points (Bathurst and Jarvis), while the actual experience of using transit involves waiting for that vehicle to show up as well. Ideally we’d be looking at a measure of end-to-end travel times including waiting and in-vehicle travel (<a href="https://doi.org/10.1016/j.compenvurbsys.2016.10.005">e.g.</a>) though, alas, this isn’t an easy thing to do for a variety of complicated reasons. Figuring out how to do this properly is the subject of my <a href="https://doi.org/10.1016/j.jtrangeo.2017.04.012">dissertation research</a>, but this dataset isn’t quite ready for that kind of analysis just yet.</p>
+
+<p>Still, to move forward with what we do have, we can take a closer look at how the distribution of vehicle travel times changes throughout the day, similar to what we did before with the mean. In the plot below, we can see the <em>median</em> travel times (blue line) along with ranges for the 5th to 95th <a href="https://en.wikipedia.org/wiki/Percentile">percentiles</a> (red) and 25-75th percentiles (purple).</p>
+
+<figure aria-describedby="caption-attachment-168" id="attachment_168"><img alt="" height="450" loading="lazy" src="/assets/img/posts/king-street-pilot-travel-time-variation/pre-pilot-medians.png" width="800"/><figcaption id="caption-attachment-168">Plot of streetcar travel times between Bathurst and Jarvis (either direction) by time of day. The red area shows the 5th-95th percentile range. Blue shows the interquartile range (25-75th percentile). The blue line is the median.</figcaption></figure>
+
+<p>One way to interpret this, if it helps, is that 90% of trips are inside the red area, 50% inside the purple one. The wider the bands, the more variability there is in travel times. In the peak of the peak for the pre-pilot data, about 5% of trips were taking more than about 31-32 minutes.</p>
+
+<p>The same plot for the post-pilot data shows a much tighter range, with less variability during the times when most people are riding. Median (and average) travel times are also down substantially, except during the early morning hours when there wasn’t much room for improvement anyway.</p>
+
+<figure aria-describedby="caption-attachment-172" id="attachment_172"><img alt="" height="450" loading="lazy" src="/assets/img/posts/king-street-pilot-travel-time-variation/post-pilot-medians.png" width="800"/><figcaption id="caption-attachment-172">Plot of streetcar travel times between Bathurst and Jarvis (either direction) by time of day. The red area shows the 5th-95th percentile range. Blue shows the interquartile range (25-75th percentile). The blue line is the median.</figcaption></figure>
+
+<p>During the peak of the peak here, the slowest %5 of trips are taking more than ~21 minutes, a full ten minute gain on the pre-pilot scenario of 31-32 minutes seen above.</p>
+
+<p>Another way of looking at variability is that old classic, the <a href="https://en.wikipedia.org/wiki/Histogram">histogram</a>. The chats below are essentially a cross-sectional view of the evening rush-hours in the two charts just above. You can see that in the pre-pilot case (top), travel times have a much wider spread than in the post-pilot (bottom) where they’re much more tightly clustered toward the lower end of the previous distribution.</p>
+
+<figure aria-describedby="caption-attachment-178" id="attachment_178"><img alt="" height="555" loading="lazy" src="/assets/img/posts/king-street-pilot-travel-time-variation/king-st-pilot-travel-time-histograms.png" width="800"/><figcaption id="caption-attachment-178">Streetcar travel time distributions during the evening rush hour for both directions of travel.</figcaption></figure>
+
+<p>And for the old-school among you, a table for the evening rush hour period.</p>
+
+<table>
+<tbody>
+<tr>
+<th></th>
+<th></th>
+<th>mean</th>
+<th>25th pct.</th>
+<th>median</th>
+<th>75th pct.</th>
+<th>90th pct</th>
+<th>stdv</th>
+</tr>
+<tr>
+<td>Bathurst to Jarvis</td>
+<td>Before</td>
+<td>20.6</td>
+<td>16.6</td>
+<td>19.7</td>
+<td>23.6</td>
+<td>27.3</td>
+<td>6.1</td>
+</tr>
+<tr>
+<td></td>
+<td>After</td>
+<td>16.4</td>
+<td>14.5</td>
+<td>16.1</td>
+<td>17.7</td>
+<td>19.8</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>Jarvis to Bathurst</td>
+<td>Before</td>
+<td>22.8</td>
+<td>18.2</td>
+<td>21.5</td>
+<td>25.3</td>
+<td>30.0</td>
+<td>8.3</td>
+</tr>
+<tr>
+<td></td>
+<td>After</td>
+<td>17.3</td>
+<td>15.3</td>
+<td>16.4</td>
+<td>18.2</td>
+<td>19.9</td>
+<td>5.7</td>
+</tr>
+</tbody>
+</table>
+
+<p>One more interesting statistic, if percentiles aren’t your thing: before the pilot, 19% of trips during the evening peak (4-7pm) were taking longer than 25 minutes, compared to just 1.3% after.</p>
+
+<p>…</p>
+
+<p>After our first post on this topic, a number of people wrote to ask about congestion effects on the Queen Street line. The King Street pilot works essentially by diverting private cars away from King Street, so it’s reasonable to assume that car traffic has become worse on surrounding streets, at least for a while since it takes time for people to change their habits and shuffle themselves around to new and more convenient places. I’d love to be able to do the same kind of analysis for the section of Queen Street just north of the pilot, but the issue is muddied by the fact that the Queen line has been regularly diverting around construction in that area, and actually sending many streetcars down to King.</p>
+
+<p>This got me thinking however about using Queen, or some other street as a control case to ensure that the effects we were seeing were indeed due to the pilot project rather than to, say, something that effects streetcars generally like weather, holidays or plagues of locusts. To check that, we looked at another stretch of the same King Street line, Bathurst to Dufferin, which has roughly the same length, and more or less precisely the same level of service<sup><a href="#marker-159-1" id="markerref-159-1">1</a></sup>.</p>
+
+<p><img alt="" height="500" loading="lazy" src="/assets/img/posts/king-street-pilot-travel-time-variation/dufferin-to-bathurst-travel-times-on-king-street.png" width="800"/></p>
+
+<p>It’s hard to visually make out any change between the before and after periods, so that’s reassuring. A statistical test reveals however that there <em>is</em> actually a significant difference between the two periods, small though it is: 8.46 minutes before, 8.27 after. This compares to 16.97 minutes before to 14.02 minutes after for the pilot area.</p>
+
+<p>…</p>
+
+<p>Anyway, We’ll likely have more analysis on this topic coming down the pipeline in the days ahead. I’m working now on calculating travel times that include waiting time and thus information on the headway variation.</p>
+
+<p>As before, shout-outs go to <a href="http://jamaps.github.io/maps.html">Jeff Allen</a> and <a href="https://stevenfarber.wordpress.com/">Steven Farber</a>, without whom this analysis would have been substantially less pleasurable and more time consuming.</p>
+
+<div id="footnotes-159">
+<div></div>
+<ol>
+<li id="marker-159-1"> Because it’s on the same line. But good on you for reading the footnotes! <span><a href="#markerref-159-1">↵</a></span></li>
+</ol>
+</div>

@@ -48,8 +48,8 @@
 
     {% if page.previous or page.next %}
     <nav class="post-nav" aria-label="More posts">
-      {% if page.previous %}<a class="post-nav-older" href="{{ root }}{{ page.previous.url | remove_first: '/' }}"><span>Older</span>{{ page.previous.title }}</a>{% endif %}
-      {% if page.next %}<a class="post-nav-newer" href="{{ root }}{{ page.next.url | remove_first: '/' }}"><span>Newer</span>{{ page.next.title }}</a>{% endif %}
+      {% if page.previous %}<a class="post-nav-older" href="{{ root }}{{ page.previous.url | remove_first: '/' }}"><span>Previous</span>{{ page.previous.title }}</a>{% endif %}
+      {% if page.next %}<a class="post-nav-newer" href="{{ root }}{{ page.next.url | remove_first: '/' }}"><span>Next</span>{{ page.next.title }}</a>{% endif %}
     </nav>
     {% endif %}
   </main>

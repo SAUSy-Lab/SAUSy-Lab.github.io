@@ -24,7 +24,7 @@
 .post-categories button {
   padding: 4px 14px;
   border: 1px solid var(--rule);
-  border-radius: 7px;
+  border-radius: 6px;
   background: none;
   font: 13px/1.5 var(--f-body);
   color: var(--text);
