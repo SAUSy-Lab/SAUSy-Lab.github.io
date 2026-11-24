@@ -378,6 +378,39 @@
     ]
   },
   {
+    "id": "sana-riaz",
+    "name": "Sana Riaz",
+    "initials": "SR",
+    "profilePath": "members/sana-riaz/",
+    "photo": {
+      "src": "assets/img/people/sana-riaz.jpg",
+      "width": 720,
+      "height": 1147
+    },
+    "role": "PhD candidate",
+    "profileRole": "PhD candidate, Transport policy and electric mobility",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Sana Riaz, PhD candidate in planning at the University of Toronto and member of the SAUSy Lab, researching electric mobility, transport policy and just transitions.",
+    "bio": [
+      "Sana Riaz is a PhD candidate in Planning at the University of Toronto. She holds a Master of Urban Planning from New York University and a Bachelor of Science (Honours) in Accounting and Finance from the Lahore University of Management Sciences, including a semester abroad at Stanford University.",
+      "Her research interests include transportation finance, transport policy for mode shift and emissions reduction, transit-oriented development, choice modelling, and spatial planning. She approaches this work through a lens of equity and justice. Her doctoral research examines consumer preferences for battery electric vehicles and e-bikes compared with conventional options, and how demand- and supply-side incentives shape uptake. Throughout, she pays attention to who benefits and who is left behind in the transition to electric mobility. She also assesses the related co-benefits for emissions and health, including physical activity.",
+      "She has work experience across intergovernmental organizations, academia, government, and the private sector, including the World Bank, the NYU Marron Institute, and the Urban Unit in Punjab, Pakistan."
+    ],
+    "keywords": [
+      "Just Transitions",
+      "Choice Modelling",
+      "Electric Mobility",
+      "Transport Policy"
+    ],
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/sanariaz/"
+      }
+    ]
+  },
+  {
     "id": "santiago-cardona-urrea",
     "group": "postdoc",
     "name": "Santiago Cardona-Urrea",
@@ -430,6 +463,59 @@
         "url": "https://scardonau94.github.io/"
       }
     ]
+  },
+  {
+    "id": "chunjiang-li",
+    "group": "postdoc",
+    "name": "Chunjiang Li",
+    "initials": "CL",
+    "profilePath": "members/chunjiang-li/",
+    "photo": {
+      "src": "assets/img/people/chunjiang-li.jpg",
+      "width": 720,
+      "height": 857
+    },
+    "role": "Postdoc",
+    "profileRole": "Postdoctoral fellow, Time geography and accessibility",
+    "department": "Department of Geography & Planning, University of Toronto",
+    "description": "Chunjiang Li, postdoctoral fellow at the University of Toronto and member of the SAUSy Lab, researching time geography, space-time accessibility and food environments.",
+    "bio": [
+      "Chunjiang Li is a postdoctoral fellow in the Department of Geography and Planning at the University of Toronto. He holds a PhD in Human Geography from Peking University in China.",
+      "Chunjiang's research focuses on everyday activities from the time-geographic perspective. Research themes include: (1) physical-virtual hybridization of everyday activities; (2) space-time accessibility, particularly the 15-minute life circle (i.e., the Chinese version of the 15-minute city); and (3) food behaviour and food environment."
+    ],
+    "keywords": [
+      "Time Geography",
+      "Space-time Behaviour",
+      "Accessibility",
+      "Food Environment"
+    ],
+    "links": [
+      {
+        "type": "google-scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=SraDH4cAAAAJ&hl=en"
+      }
+    ]
+  },
+  {
+    "id": "shaila-jamal",
+    "group": "postdoc",
+    "name": "Shaila Jamal",
+    "initials": "SJ",
+    "role": "Postdoc",
+    "bio": [],
+    "keywords": [],
+    "links": []
+  },
+  {
+    "id": "amir-forouhar",
+    "group": "postdoc",
+    "name": "Amir Forouhar",
+    "initials": "AF",
+    "role": "Postdoc",
+    "bio": [],
+    "keywords": [],
+    "links": []
   },
   {
     "id": "ka-yiu-ng",
