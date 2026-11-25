@@ -18,6 +18,10 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: google406868fc4a865144.html
+    values:
+      sitemap: false
 
 exclude:
   - README.md
