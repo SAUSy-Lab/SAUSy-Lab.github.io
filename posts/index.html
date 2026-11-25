@@ -9,7 +9,7 @@ title: Posts
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Posts | SAUSy Lab</title>
-<meta name="description" content="News, conference notes and analysis from the SAUSy Lab, University of Toronto.">
+{% include seo.html title="Posts" description="News, conference notes and analysis from the SAUSy Lab, University of Toronto." %}
 <link rel="icon" href="{{ root }}assets/img/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@ title: Posts
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="site">
 
-  {% include site-header.html root=root %}
+  {% include site-header.html root=root current="posts" %}
 
   <main id="main">
     <h1>Posts</h1>

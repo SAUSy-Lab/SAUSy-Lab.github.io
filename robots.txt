@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sausy.ca/sitemap.xml

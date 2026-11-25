@@ -1,13 +1,42 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="en-CA">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SAUSy Lab</title>
-    <meta
-      name="description"
-      content="Spatial Analysis of Urban Systems at the University of Toronto"
-    />
+    <title>SAUSy Lab | Spatial Analysis of Urban Systems, University of Toronto</title>
+    {% include seo.html title="SAUSy Lab" description="The SAUSy Lab (Spatial Analysis of Urban Systems) at the University of Toronto uses spatial analysis to study accessibility, transportation, urban health, social interaction and food environments." %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "SAUSy Lab",
+        "alternateName": "Spatial Analysis of Urban Systems Lab",
+        "url": {{ "/" | absolute_url | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Toronto",
+          "url": "https://www.utoronto.ca"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sidney Smith Hall, 100 St. George Street",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "sameAs": ["https://github.com/SAUSy-Lab"],
+        "member": [
+          {%- assign profiles = site.data.students | where_exp: "person", "person.profilePath != nil" -%}
+          {%- for person in profiles %}
+          { "@type": "Person", "name": {{ person.name | jsonify }}, "url": {{ person.profilePath | prepend: "/" | absolute_url | jsonify }} }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ]
+      }
+    </script>
     <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

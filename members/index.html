@@ -1,13 +1,14 @@
+---
+layout: null
+---
+{%- assign root = "../" -%}
 <!doctype html>
 <html lang="en-CA">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SAUSy People | SAUSy Lab</title>
-    <meta
-      name="description"
-      content="Faculty, postdocs and students of the SAUSy Lab, University of Toronto"
-    />
+    <title>Members | SAUSy Lab, University of Toronto</title>
+    {% include seo.html title="SAUSy Lab members" description="Faculty, postdocs and students of the SAUSy Lab, University of Toronto" %}
     <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
     />
     <link rel="stylesheet" href="../assets/css/site.css" />
-    <script src="../assets/js/students.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -48,22 +48,35 @@
 
         <section class="group">
           <h2>Professors &amp; Postdocs</h2>
-          <ul class="people" data-postdocs></ul>
+          <ul class="people">
+            {%- for person in site.data.students %}
+            {%- if person.group == "faculty" or person.group == "postdoc" %}
+            {% include person-card.html person=person root=root %}
+            {%- endif %}
+            {%- endfor %}
+          </ul>
         </section>
 
         <section class="group">
           <h2>Students</h2>
-          <ul class="people" data-students>
-            <li>Loading students…</li>
+          <ul class="people">
+            {%- for person in site.data.students %}
+            {%- unless person.group %}
+            {% include person-card.html person=person root=root %}
+            {%- endunless %}
+            {%- endfor %}
           </ul>
-          <noscript
-            ><p>Enable JavaScript to view the student list.</p></noscript
-          >
         </section>
 
         <section class="group">
           <h2>Visiting Students</h2>
-          <ul class="people" data-visiting></ul>
+          <ul class="people">
+            {%- for person in site.data.students %}
+            {%- if person.group == "visiting" %}
+            {% include person-card.html person=person root=root %}
+            {%- endif %}
+            {%- endfor %}
+          </ul>
         </section>
 
         <section class="group">

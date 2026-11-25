@@ -1,1 +1,6 @@
-<p class="post-meta">{% if include.post.author %}{{ include.post.author }}, {% endif %}<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%B %-d, %Y" }}</time></p>
+<p class="post-meta">
+  {% if include.post.author %}{{ include.post.author }}, {% endif %}<time
+    datetime="{{ include.post.date | date_to_xmlschema }}"
+    >{{ include.post.date | date: "%B %-d, %Y" }}</time
+  >
+</p>

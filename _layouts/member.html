@@ -1,0 +1,134 @@
+{%- comment -%} page.member is the person's id in _data/students.json {%-
+endcomment -%} {%- assign person = site.data.students | where: "id", page.member
+| first -%} {%- assign root = "../../" -%} {%- assign role = person.profileRole
+| default: person.role -%} {%- capture fallback_description -%}{{ person.name
+}}, member of the SAUSy Lab at the University of Toronto.{%- endcapture -%} {%-
+assign description = person.description | default: fallback_description -%} {%-
+assign same_as = person.links | where_exp: "link", "link.type != 'custom'" |
+map: "url" -%}
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ person.name | escape }} | SAUSy Lab, University of Toronto</title>
+    {% include seo.html title=person.name description=description
+    image=person.photo.src type="profile" %}
+    <link
+      rel="icon"
+      href="{{ root }}assets/img/logo.svg"
+      type="image/svg+xml"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="{{ root }}assets/css/site.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": {{ page.url | absolute_url | jsonify }},
+        "mainEntity": {
+          "@type": "Person",
+          "name": {{ person.name | jsonify }},
+          {%- if role %}
+          "jobTitle": {{ role | jsonify }},
+          {%- endif %}
+          "description": {{ description | jsonify }},
+          {%- if person.photo %}
+          "image": {{ person.photo.src | prepend: "/" | absolute_url | jsonify }},
+          {%- endif %}
+          {%- if person.keywords.size > 0 %}
+          "knowsAbout": {{ person.keywords | jsonify }},
+          {%- endif %}
+          {%- if same_as.size > 0 %}
+          "sameAs": {{ same_as | jsonify }},
+          {%- endif %}
+          {%- if person.department %}
+          "affiliation": { "@type": "Organization", "name": {{ person.department | jsonify }} },
+          {%- endif %}
+          "memberOf": {
+            "@type": "ResearchOrganization",
+            "name": "SAUSy Lab",
+            "url": {{ "/" | absolute_url | jsonify }},
+            "parentOrganization": { "@type": "CollegeOrUniversity", "name": "University of Toronto" }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site">
+      {% include site-header.html root=root current="members" %}
+
+      <main id="main">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../">Members</a> / <span>{{ person.name | escape }}</span>
+        </nav>
+
+        <article class="profile">
+          <div class="profile-photo">
+            {%- if person.photo %}
+            <img
+              src="{{ root }}{{ person.photo.src }}"
+              alt="{{ person.name | escape }}"
+              width="{{ person.photo.width }}"
+              height="{{ person.photo.height }}"
+            />
+            {%- else %}
+            <span class="initials">{{ person.initials }}</span>
+            {%- endif %}
+          </div>
+          <div>
+            <h1>{{ person.name | escape }}</h1>
+            {%- if role %}
+            <p class="role">{{ role | escape }}</p>
+            {%- endif %} {%- if person.department %}
+            <p class="dept">{{ person.department | escape }}</p>
+            {%- endif %} {%- if person.links.size > 0 %}
+            <p class="links">
+              {%- for link in person.links -%} {%- case link.type -%} {%- when
+              "linkedin", "github", "google-scholar", "orcid" -%}{%- assign icon
+              = link.type -%} {%- when "website" -%}{%- assign icon = "globe"
+              -%} {%- else -%}{%- assign icon = "" -%} {%- endcase -%} {%-
+              assign label = link.label | default: link.url | escape -%} {%- if
+              icon != "" %}
+              <a
+                class="profile-link profile-link--icon"
+                href="{{ link.url }}"
+                aria-label="{{ label }}"
+                title="{{ label }}"
+                ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <use
+                    href="{{ root }}assets/img/profile-links.svg#{{ icon }}"
+                  ></use></svg
+              ></a>
+              {%- else %}
+              <a class="profile-link" href="{{ link.url }}">{{ label }}</a>
+              {%- endif -%} {%- endfor %}
+            </p>
+            {%- endif %} {%- if person.bio.size > 0 or person.keywords.size > 0
+            %}
+            <div class="bio">
+              {%- for paragraph in person.bio %}
+              <p>{{ paragraph | escape }}</p>
+              {%- endfor %} {%- if person.keywords.size > 0 %}
+              <p class="keywords">
+                <strong>Keywords:</strong> {{ person.keywords | join: ", " |
+                escape }}
+              </p>
+              {%- endif %}
+            </div>
+            {%- endif %}
+          </div>
+        </article>
+      </main>
+
+      {% include site-footer.html root=root %}
+    </div>
+  </body>
+</html>

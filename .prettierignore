@@ -1,0 +1,10 @@
+# Prettier doesn't understand Liquid and breaks {% if %} tags inside attributes
+_includes/
+_layouts/
+_posts/
+_site/
+index.html
+members/
+posts/index.html
+recent-pubs/index.html
+mcrs/index.html

@@ -1,0 +1,15 @@
+{%- assign person = include.person -%}
+{%- if person.profilePath -%}
+  {%- assign target = person.profilePath | prepend: include.root -%}
+{%- elsif person.links.size > 0 -%}
+  {%- assign target = person.links.first.url -%}
+{%- else -%}
+  {%- assign target = "" -%}
+{%- endif -%}
+<li class="person">{% if target != "" %}<a href="{{ target }}">{% else %}<div>{% endif %}<span class="photo">
+  {%- if person.photo -%}
+    <img src="{{ include.root }}{{ person.photo.src }}" alt="" width="{{ person.photo.width }}" height="{{ person.photo.height }}" loading="lazy">
+  {%- else -%}
+    <span class="initials">{{ person.initials }}</span>
+  {%- endif -%}
+</span><span class="name">{{ person.name | escape }}</span>{% if target != "" %}</a>{% else %}</div>{% endif %}</li>

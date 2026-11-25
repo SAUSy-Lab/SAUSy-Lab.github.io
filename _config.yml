@@ -1,5 +1,6 @@
 title: SAUSy Lab
 description: Spatial Analysis of Urban Systems at the University of Toronto
+url: https://sausy.ca
 timezone: America/Toronto
 
 # old WordPress post addresses
@@ -8,6 +9,9 @@ permalink: /:year/:month/:title/
 markdown: kramdown
 kramdown:
   input: GFM
+
+plugins:
+  - jekyll-sitemap
 
 defaults:
   - scope:
